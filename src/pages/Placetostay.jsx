@@ -1,5 +1,4 @@
 import styles from '../style.module.css';
-import Modalbtn from '../components/Modal';
 
 import { placetostay, placetostayNav } from '../constants';
 import { filter, rate } from '../assets';
