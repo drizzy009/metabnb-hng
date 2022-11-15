@@ -25,6 +25,12 @@
     padding: 10px 25px;
     font-size: 12px;
   }
+  .searchInput {
+    width: 66% !important;
+  }
+  .searchLabel {
+    padding: 17px 30px !important;
+  }
 }
 
 .searchLabel {
