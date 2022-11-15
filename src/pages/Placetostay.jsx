@@ -1,6 +1,6 @@
 import styles from '../style.module.css';
 
-import { nftpack } from '../constants';
+import { placetostay } from '../constants';
 import { rate } from '../assets';
 
 const Placetostay = () => {
@@ -12,11 +12,9 @@ const Placetostay = () => {
         </h2>
       </div>
       <div
-        className={`flex  ${styles.showcaseGrid} ${
-          index !== nftpack.length - 1 ? 'mb-6' : 'mb-0'
-        }`}
+        className={`flex  ${styles.showcaseGrid} `}
       >
-        {nftpack.map((nftpacks, index) => (
+        {placetostay.map((nftpacks) => (
           <div key={nftpacks.id} className={`${styles.showcaseBorder}`}>
             <div>
               <img src={nftpacks.nftimg} alt="NFTs' Packs" />

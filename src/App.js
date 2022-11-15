@@ -1,18 +1,22 @@
 import React from 'react';
-import './App.css';
-import Hero from './components/Hero';
-import Tokens from './components/Tokens';
-import Showcase from './components/Showcase';
-import Metabnb from './components/Metabnb';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Placetostay from './pages/Placetostay';
+import Navbar from './components/Navbar';
+import { navLinks } from './constants/index';
 
 
 function App() {
+  
   return (
     <div className="">
-      <Hero />
-      <Tokens />
-      <Showcase />
-      <Metabnb />
+      <Router>
+        <Routes>
+          <Route path='/' element={< Home />} />
+          <Route path='/place-to-stay' element={< Placetostay />} exact />
+          <Route />
+        </Routes>
+      </Router>
     </div>
   );
 }

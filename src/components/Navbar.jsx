@@ -2,16 +2,20 @@ import { navLinks } from "./../constants/index";
 import { useState } from "react";
 import { menu, close, metabnblogo } from "../assets";
 import styles from "../style.module.css"
+import { Link } from "react-router-dom";
+
+
+
 
 const Navbar = () => {
   const [active, setActive] = useState ("Home");
   const [toggle, setToggle] = useState (false);
 
   return (
-    <nav className="w-full flex py-6 justify-around items-center">
+    <nav className="flex items-center justify-around w-full py-6">
       <img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex" />
 
-      <ul className="list-none sm:flex hidden justify-center items-center">
+      <ul className="items-center justify-center hidden list-none sm:flex">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -23,6 +27,11 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <Link
+          to="place-to-stay"
+        >
+          Contact Me
+        </Link>
       </ul>
       <button className={`${styles.navbtnConnect} sm:flex hidden `}>Connect wallet</button>
 
@@ -42,7 +51,7 @@ const Navbar = () => {
             !toggle ? "hidden" : "flex"
           } p-6 bg-black-gradient absolute top-20 right-0  my-2 min-w-[140px] rounded-xl mx-6  ${styles.menuMobile} ${styles.sidebar}`}
         >
-          <ul className="list-none flex justify-center items-center flex-col">
+          <ul className="flex flex-col items-center justify-center list-none">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

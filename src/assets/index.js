@@ -14,6 +14,14 @@ import nft5 from "./nft-5.png";
 import nft6 from "./nft-6.png";
 import nft7 from "./nft-7.png";
 import nft8 from "./nft-8.png";
+import nft9 from "./nft-9.png";
+import nft10 from "./nft-10.png";
+import nft11 from "./nft-11.png";
+import nft12 from "./nft-12.png";
+import nft13 from "./nft-13.png";
+import nft14 from "./nft-14.png";
+import nft15 from "./nft-15.png";
+import nft16 from "./nft-16.png";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import instagram from "./instagram.svg";
@@ -27,4 +35,4 @@ import close from "./close.svg"
 import menu from "./menu.svg"
 import rate from "./rate.svg"
 
-export { castle, grouped, ungrouped, ungrouped2, ungrouped3, tent, house, housechimney, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, facebook, twitter, instagram, metabnblogo, metabnblogo2, metamask,opensea, mbtoken, wish, close, menu, rate}
+export { castle, grouped, ungrouped, ungrouped2, ungrouped3, tent, house, housechimney, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, facebook, twitter, instagram, metabnblogo, metabnblogo2, metamask,opensea, mbtoken, wish, close, menu, rate}
