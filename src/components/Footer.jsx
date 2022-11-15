@@ -12,6 +12,7 @@ const Footer = () => (
         <img
           src={metabnblogo2}
           alt="metabnb"
+          className=" sm:flex items-start sm:m-0 m-[auto] sm:w-[80%] w-[60%]"
         />
         <div className="flex justify-center pt-8 pb-8 sm:justify-start sm:pb-12 sm:pt-20">
         {socialMedia.map((social, index) => (

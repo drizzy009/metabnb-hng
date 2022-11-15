@@ -13,8 +13,8 @@ const Navbar = () => {
   
 
   return (
-    <nav className="flex items-center justify-around w-full py-6">
-      <Link to='/'><img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex" /></Link>
+    <nav className="flex items-center justify-around w-full py-6 mx-5 sm:mx-0">
+      <Link to='/'><img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex sm:w-[100%] w-[60%]" /></Link>
 
       <ul className="items-center justify-center hidden list-none sm:flex">
         {navLinks.map((nav, index) => (
