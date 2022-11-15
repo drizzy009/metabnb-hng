@@ -18,3 +18,18 @@ body {
 .ReactModal__Content.ReactModal__Content--after-open {
   border-radius: 16px !important;
 }
+
+
+@media (max-width: 768px) {
+  .footerBorder {
+    border-top: 1px solid #b4b4b4;
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+  }
+}

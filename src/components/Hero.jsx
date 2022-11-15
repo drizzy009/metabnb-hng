@@ -23,12 +23,12 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex'>
-          <div className='pt-0 sm:pt-16 sm:flex sm:flex-col'>
-            <img src={house} alt={`nft house`} className="sm:m-2" />
-            <img src={housechimney} alt={`nft house`} className="sm:m-2" />
+          <div className='pt-0 mr-2 sm:pt-16 sm:flex sm:flex-col'>
+            <img src={house} alt={`nft house`} className="mb-2 sm:m-2 sm:mx-2" />
+            <img src={housechimney} alt={`nft house`} className="sm:mb-2 sm:mx-2" />
           </div>
           <div className='flex-col'>
-            <img src={tent} alt={`nft tent`} className="sm:mr-2 sm:mb-2" />
+            <img src={tent} alt={`nft tent`} className="mb-2 sm:mr-2 sm:mb-2" />
             <img src={castle} alt={`nft castle`} className="sm:mr-2" />
           </div>
         </div>

@@ -5,12 +5,12 @@ import { rate } from '../assets';
 
 const Showcase = ({ icon, title, content, index }) => (
   
-  <section className='mx-20'>
+  <section className='mx-5 sm:mx-20'>
     <div className='py-10'>
         <h2 className='text-[48px] text-center leading-[59.95px] font-bold'>Inspiration for your next adventure</h2>
     </div>
   <div
-    className={`flex  ${styles.showcaseGrid} ${
+    className={`  ${styles.showcaseGrid} ${
       index !== nftpack.length - 1 ? 'mb-6' : 'mb-0'
     }`}
   >

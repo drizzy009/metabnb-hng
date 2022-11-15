@@ -16,6 +16,9 @@
   line-height: 19.98px;
   font-family: 'Red Rose';
 }
+.footerBorder {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .navbtnConnect {
@@ -30,6 +33,20 @@
   }
   .searchLabel {
     padding: 17px 30px !important;
+  }
+  .showcaseGrid {
+    display: block !important;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+  }
+  .showcaseGrid img {
+    width: 100% !important;
+  }
+  .footerBorder {
+      position: absolute;
+      right: 0%;
+      width: 100% !important;
+      display: block;
   }
 }
 
@@ -71,6 +88,7 @@
   margin: 20px 0 40px;
 }
 
+
 .searchInput {
   background: rgba(247, 247, 247, 0.1);
   border: 1px solid #a3a3a3;
@@ -85,10 +103,6 @@
   padding: 0 20px;
 }
 
-.h1Span {
-  font-family: GT Walsheim Pro;
-  font-weight: 700;
-}
 
 .showcaseGrid {
   display: grid;

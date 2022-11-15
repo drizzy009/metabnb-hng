@@ -2,11 +2,11 @@ import { mbtoken, metamask, opensea } from "../assets"
 
 const Tokens = () => {
   return (
-    <section className="bg-lightPurple mx-0 py-4">
+    <section className="sm:mx-0 sm:py-4 bg-lightPurple ">
         <div className="flex justify-around">
-            <img src={mbtoken} alt="mbtoken" />
-            <img src={metamask} alt="mbtoken" />
-            <img src={opensea} alt="mbtoken" />
+            <img className="sm:w-[14%] w-[26%]" src={mbtoken} alt="mbtoken" />
+            <img className="sm:w-[14%] w-[26%]" src={metamask} alt="mbtoken" />
+            <img className="sm:w-[14%] w-[26%]" src={opensea} alt="mbtoken" />
         </div>
     </section>
   )
