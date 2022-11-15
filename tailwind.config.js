@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         'redrose': ['"Red Rose"', 'cursive'],
         ' gtwalsheimpro': ['" GT Walsheim Pro"', 'cursive'],
+        'inter': ['"Inter"', 'sans-serif'],
       },
       colors: {
         lightPurple: "#a02279",

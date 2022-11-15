@@ -1,18 +1,22 @@
 import styles from '../style.module.css';
+import Modalbtn from '../components/Modal';
 
-import { placetostay } from '../constants';
-import { rate } from '../assets';
+import { placetostay, placetostayNav } from '../constants';
+import { filter, rate } from '../assets';
 
 const Placetostay = () => {
   return (
     <section className="mx-20">
-      <div className="py-10">
-        <h2 className="text-[48px] text-center leading-[59.95px] font-bold">
-          Inspiration for your next adventure
-        </h2>
-      </div>
+      <ul className="flex items-center justify-around py-16">
+        {placetostayNav.map((sub) => (
+          <li key={sub.id} className='flex justify-between'>
+            {sub.title}
+          </li>
+        ))}
+        <button className={`${styles.filterBtn}`}><span className='px-4 py-3'>Location</span> <img src={filter} alt={filter} className='px-4'/></button>
+      </ul>
       <div
-        className={`flex  ${styles.showcaseGrid} `}
+        className={`flex  ${styles.showcaseGrid}  pb-14`}
       >
         {placetostay.map((nftpacks) => (
           <div key={nftpacks.id} className={`${styles.showcaseBorder}`}>

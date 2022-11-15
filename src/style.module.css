@@ -7,11 +7,62 @@
   line-height: 19.98px;
   font-family: 'Red Rose';
 }
+.navbtnConnect_mob {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  padding: 15px 26px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19.98px;
+  font-family: 'Red Rose';
+}
+
+@media (max-width: 768px) {
+  .navbtnConnect {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+}
+
 .searchLabel {
   color: #fff;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
   border-radius: 0px 8px 8px 0px;
   padding: 17px 87px;
+}
+
+.filterBtn {
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.connectWallet {
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000 !important;
+}
+.modalH4 {
+  border-top: 1px solid #000;
+  padding: 40px 0 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  margin: 20px 0 40px;
 }
 
 .searchInput {
@@ -47,7 +98,12 @@
 }
 
 .menuMobile {
-  background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+  background: linear-gradient(
+    91.47deg,
+    #dc3e88 18.25%,
+    #b840ae 43.34%,
+    #843fe8 78.18%
+  );
   margin: 0 20px !important;
 }
 .sidebar {

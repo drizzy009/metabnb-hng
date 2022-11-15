@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rubik:wght@300&display=swap');
 
 
 
@@ -9,4 +10,11 @@
 
 body {
   font-family: 'Red Rose';
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background: rgba(64, 64, 64, 0.3) !important;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  border-radius: 16px !important;
 }

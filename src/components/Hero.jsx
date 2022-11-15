@@ -4,13 +4,13 @@ import style from '../style';
 
 const Hero = () => {
   return (
-    <section className="flex my-20 mx-20">
-      <div className='flex justify-between w-full'>
+    <section className="mx-5 my-5 sm:my-20 sm:mx-20 sm:flex">
+      <div className='sm:w-full sm:justify-between sm:flex'>
         <div className='flex-1 py-6'>
           <h1 className="font-normal text-[50px] leading-[64.4px]">
             Rent a <span className={`text-lightPurple font-bold `}>Place</span> away from{' '}
-            <span className="text-lightPurple font-bold">Home</span> in the{' '}
-            <span className="text-lightPurple font-bold">Metaverse</span>
+            <span className="font-bold text-lightPurple">Home</span> in the{' '}
+            <span className="font-bold text-lightPurple">Metaverse</span>
           </h1>
           <p className={`${style.paragraph} w-[85%] py-10`}>
             We provide you access to luxury and affordable houses in the
@@ -28,7 +28,7 @@ const Hero = () => {
             <img src={housechimney} alt={`nft house`} className="m-2" />
           </div>
           <div>
-            <img src={tent} alt={`nft tent`} className="mr-2 mb-2" />
+            <img src={tent} alt={`nft tent`} className="mb-2 mr-2" />
             <img src={castle} alt={`nft castle`} className="mr-2" />
           </div>
         </div>

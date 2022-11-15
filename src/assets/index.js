@@ -34,5 +34,11 @@ import wish from "./wish.svg"
 import close from "./close.svg"
 import menu from "./menu.svg"
 import rate from "./rate.svg"
+import filter from "./filter.svg"
+import close24 from "./close-24.svg"
+import close48 from "./close-48.svg"
+import metamasklogo from "./metamask-logo.svg"
+import walletconnectlogo from "./walletconnect.svg"
+import right from "./right.svg"
 
-export { castle, grouped, ungrouped, ungrouped2, ungrouped3, tent, house, housechimney, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, facebook, twitter, instagram, metabnblogo, metabnblogo2, metamask,opensea, mbtoken, wish, close, menu, rate}
+export { right, metamasklogo, walletconnectlogo, close24, close48, filter, castle, grouped, ungrouped, ungrouped2, ungrouped3, tent, house, housechimney, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, facebook, twitter, instagram, metabnblogo, metabnblogo2, metamask,opensea, mbtoken, wish, close, menu, rate}

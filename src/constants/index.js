@@ -24,7 +24,7 @@ import {
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
   },
   {
@@ -348,5 +348,40 @@ export const placetostay = [
     price: "1MBT per night",
     duration: "available for 2 weeks stay",
     wish: wish,
+  },
+];
+
+export const placetostayNav = [
+  {
+    id: "restuarant",
+    title: "Restuarant",
+  },
+  {
+    id: "cottage",
+    title: "Cottage",
+  },
+  {
+    id: "castle",
+    title: "Castle",
+  },
+  {
+    id: "fantast-city",
+    title: "Fantast City",
+  },
+  {
+    id: "beach",
+    title: "Beach",
+  },
+  {
+    id: "cabins",
+    title: "Cabins",
+  },
+  {
+    id: "off-grid",
+    title: "Off Grid",
+  },
+  {
+    id: "farm",
+    title: "Farm",
   },
 ];

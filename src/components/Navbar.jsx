@@ -3,17 +3,18 @@ import { useState } from "react";
 import { menu, close, metabnblogo } from "../assets";
 import styles from "../style.module.css"
 import { Link } from "react-router-dom";
-
+import Modalbtn from '../components/Modal';
 
 
 
 const Navbar = () => {
   const [active, setActive] = useState ("Home");
   const [toggle, setToggle] = useState (false);
+  
 
   return (
     <nav className="flex items-center justify-around w-full py-6">
-      <img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex" />
+      <Link to='/'><img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex" /></Link>
 
       <ul className="items-center justify-center hidden list-none sm:flex">
         {navLinks.map((nav, index) => (
@@ -29,7 +30,8 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className={`${styles.navbtnConnect} sm:flex hidden `}>Connect wallet</button>
+     {/*<button className={`${styles.navbtnConnect} sm:flex hidden `}>Connect wallet</button>*/}
+     <Modalbtn  />
 
 
 
@@ -56,10 +58,10 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <Link to={nav.id}>{nav.title}</Link>
               </li>
             ))}
-            <button className={`${styles.navbtnConnect} sm:hidden flex my-4`}>Connect wallet</button>
+            
           </ul>
         </div>
       </div>
