@@ -24,14 +24,10 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+           
+            <Link to={nav.id}>{nav.title}</Link>
           </li>
         ))}
-        <Link
-          to="place-to-stay"
-        >
-          Contact Me
-        </Link>
       </ul>
       <button className={`${styles.navbtnConnect} sm:flex hidden `}>Connect wallet</button>
 
@@ -67,6 +63,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      
     </nav>
   );
 };

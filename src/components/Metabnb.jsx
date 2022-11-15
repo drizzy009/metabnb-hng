@@ -3,8 +3,8 @@ import { grouped } from '../assets'
 
 const Metabnb = () => {
   return (
-    <section className='flex bg-lightPurple py-16'>
-    <div className='mx-20 flex'>
+    <section className='flex py-16 bg-lightPurple'>
+    <div className='flex mx-20'>
       <div className='flex flex-col w-[50%] py-8'>
         <h3 className='text-white text-[48px] leading-[59.95px] text-bold'>Metabnb NFTs</h3>
         <p className='text-white text-[18px] leading-[35px] mr-40 py-6'>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
