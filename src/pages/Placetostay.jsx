@@ -3,19 +3,21 @@ import styles from '../style.module.css';
 import { placetostay, placetostayNav } from '../constants';
 import { filter, rate } from '../assets';
 
-const Placetostay = () => {
+const Placetostay = ( index ) => {
   return (
-    <section className="mx-20">
-      <ul className="flex items-center justify-around py-16">
+    <section className={`sm:mx-20 ${styles.showcaseMargin}`}>
+      <ul className={`${styles.placetostayHeader} flex items-center justify-around py-16`}>
         {placetostayNav.map((sub) => (
           <li key={sub.id} className='flex justify-between'>
             {sub.title}
           </li>
         ))}
-        <button className={`${styles.filterBtn}`}><span className='px-4 py-3'>Location</span> <img src={filter} alt={filter} className='px-4'/></button>
+        <button className={`${styles.filterBtn} flex items-center `}><span className='px-0 py-3 sm:px-4'>Location</span> <img src={filter} alt={filter} className='px-0 sm:px-4'/></button>
       </ul>
       <div
-        className={`flex  ${styles.showcaseGrid}  pb-14`}
+        className={`sm:flex block ${styles.showcaseGrid} ${
+      index !== placetostay.length - 1 ? 'mb-6' : 'mb-0'
+    } pb-14`}
       >
         {placetostay.map((nftpacks) => (
           <div key={nftpacks.id} className={`${styles.showcaseBorder}`}>

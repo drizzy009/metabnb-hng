@@ -38,7 +38,7 @@ function Modalbtn () {
   return (
     <div>
       <button
-        className={`${styles.navbtnConnect}`}
+        className={`${styles.navbtnConnect} ${styles.tabNav}`}
         onClick={openModal}
       >
         Connect Wallet
@@ -52,11 +52,11 @@ function Modalbtn () {
         style={customStyles}
       >
         <div className=''>
-          <div className={`flex justify-between gap-[360px]`}>
+          <div className={`flex justify-between sm:gap-[360px]`}>
             <h2 className='font-semibold tracking-wide font-inter'>
               Connect Wallet
             </h2>
-            <img src={close24} alt="close" onClick={closeModal} />
+            <img src={close24} className='cursor-pointer' alt="close" onClick={closeModal} />
           </div>
           <span className={`${styles.modalH4}`}></span>
           <h4 className={`pt-16 pb-3`}>Choose your preferred wallet:</h4>

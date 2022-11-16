@@ -13,10 +13,10 @@ const Navbar = () => {
   
 
   return (
-    <nav className="flex items-center justify-around w-full py-6 mx-5 sm:mx-0">
-      <Link to='/'><img src={metabnblogo} alt="metabnblogo" className="sm:justify-center sm:flex sm:w-[100%] w-[60%]" /></Link>
+    <nav className="flex items-center justify-around py-6 mx-5 sm:w-full sm:mx-0 w-[90%]">
+      <Link to='/'><img src={metabnblogo} alt="metabnblogo" className={`sm:justify-center sm:flex sm:w-[100%]  ${styles.tabNavlogo}`} /></Link>
 
-      <ul className="items-center justify-center hidden list-none sm:flex">
+      <ul className={`${styles.tabNav} items-center justify-center hidden list-none sm:flex`}>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
 
-      <div className={`sm:hidden flex flex-1 justify-end items-center mx-10`}>
+      <div className={`sm:hidden flex md:hidden flex-1 justify-end items-center sm:mx-10 mx-0`}>
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -49,7 +49,7 @@ const Navbar = () => {
             !toggle ? "hidden" : "flex"
           } p-6 bg-black-gradient absolute top-20 right-0  my-2 min-w-[140px] rounded-xl mx-6  ${styles.menuMobile} ${styles.sidebar}`}
         >
-          <ul className="flex flex-col items-center justify-center list-none">
+          <ul className={`flex flex-col items-center justify-center list-none ${styles.tabNav_mob}`}>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

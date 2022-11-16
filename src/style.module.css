@@ -25,7 +25,7 @@
     position: absolute;
     top: 9%;
     left: 5%;
-    padding: 10px 25px;
+    padding: 10px 25px !important;
     font-size: 12px;
   }
   .searchInput {
@@ -43,12 +43,81 @@
     width: 100% !important;
   }
   .footerBorder {
-      position: absolute;
-      right: 0%;
-      width: 100% !important;
-      display: block;
+    position: absolute;
+    right: 0%;
+    width: 100% !important;
+    display: block;
+  }
+  .placetostayHeader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 10px 0;
+  }
+  .placetostayHeader li {
+    padding: 5px 0;
+  }
+  .tabNavlogo {
+    width: 63% !important;
+  }
+  .showcaseMargin {
+    margin: 20px !important;
+  }
+  .showcaseBorder {
+    margin: 0px !important;
+  }
+  .heroCenter {
+    margin-bottom: 20px !important;
   }
 }
+
+@media (max-width: 1345px) {
+  .tabNav li {
+    font-size: 14px !important;
+  }
+  .navbtnConnect {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 0 10px;
+  }
+  .tabNavlogo {
+    width: 60%;
+  }
+  .showcaseGrid {
+    display: grid;
+grid-template-columns: 2fr 2fr !important;
+justify-items: unset !important;
+  }
+  .showcaseMargin {
+    margin: 0 20px ;
+  }
+  .showcaseBorder img {
+    width: 100%;
+  }
+  .showcaseBorder {
+    margin: 10px;
+  }
+  .heroFlex {
+    display: block;
+  }
+  .heroCenter {
+    justify-content: center;
+    margin-bottom: 49px;
+  }
+  .metabnbBlock {
+    display: block;
+  }
+  .metabnbWidth {
+    width: 100%;
+  }
+  .metabnbWidth p {
+    margin: 0;
+  }
+  .metabnbImg {
+    width: 100% !important;
+  }
+}
+
+
 
 .searchLabel {
   color: #fff;
@@ -88,7 +157,6 @@
   margin: 20px 0 40px;
 }
 
-
 .searchInput {
   background: rgba(247, 247, 247, 0.1);
   border: 1px solid #a3a3a3;
@@ -103,6 +171,10 @@
   padding: 0 20px;
 }
 
+.searchInput:focus {
+  outline: none;
+  color: #000;
+}
 
 .showcaseGrid {
   display: grid;

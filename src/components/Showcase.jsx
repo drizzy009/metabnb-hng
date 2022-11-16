@@ -3,11 +3,11 @@ import styles from '../style.module.css';
 import { nftpack } from '../constants';
 import { rate } from '../assets';
 
-const Showcase = ({ icon, title, content, index }) => (
+const Showcase = ({ index }) => (
   
-  <section className='mx-5 sm:mx-20'>
+  <section className={`sm:mx-20 ${styles.showcaseMargin}`}>
     <div className='py-10'>
-        <h2 className='text-[48px] text-center leading-[59.95px] font-bold'>Inspiration for your next adventure</h2>
+        <h2 className=' text-center sm:text-[48px] sm:leading-[59.95px] text-[40px] leading-[50px] font-bold'>Inspiration for your next adventure</h2>
     </div>
   <div
     className={`  ${styles.showcaseGrid} ${

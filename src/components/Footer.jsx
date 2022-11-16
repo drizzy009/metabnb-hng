@@ -33,9 +33,9 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 sm:mx-0 mx-5">
+      <div className="flex-[1.5] sm:w-full w-[94px] flex flex-row justify-between flex-wrap md:mt-0 mt-10 sm:mx-0 mx-5">
         {footerLinks.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 sm:min-w-[150px] min-w-[34%]`}>
             <h4 className="font-redrose font-bold text-[18px] leading-[22.48px] text-white">
               {footerlink.title}
             </h4>

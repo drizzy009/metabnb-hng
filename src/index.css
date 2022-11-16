@@ -32,4 +32,15 @@ body {
     left: 0;
     display: block;
   }
+  .showcaseGrid {
+    display: block !important;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+  }
+  .showcaseGrid img {
+    width: 100% !important;
+  }
+  .ReactModal__Content.ReactModal__Content--after-open {
+    width: 93% !important;
+  }
 }
