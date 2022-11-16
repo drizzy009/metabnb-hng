@@ -5,7 +5,7 @@ import styles from "../style.module.css"
 const Metabnb = () => {
   return (
     <section className='block py-8 sm:py-16 sm:flex bg-lightPurple'>
-    <div className={`block mx-5 sm:mx-20 sm:flex ${styles.metabnbBlock}`}>
+    <div className={`block ${styles.showcaseMargin} sm:mx-20 sm:flex ${styles.metabnbBlock}`}>
       <div className={`sm:flex block sm:flex-col sm:w-[50%] py-8 ${styles.metabnbWidth}`}>
         <h3 className='text-white sm:text-[48px] sm:leading-[59.95px] text-[40px] leading-[50px] text-center sm:text-left text-bold'>Metabnb NFTs</h3>
         <p className='text-white text-[18px] leading-[35px] sm:mr-40 py-6'>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>

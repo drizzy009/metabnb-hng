@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Red Rose';
+  overflow-x: hidden;
 }
 
 .ReactModal__Overlay.ReactModal__Overlay--after-open {

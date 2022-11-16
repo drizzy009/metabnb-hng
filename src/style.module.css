@@ -68,6 +68,9 @@
   .heroCenter {
     margin-bottom: 20px !important;
   }
+  .footerReverse {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 1345px) {
@@ -114,6 +117,22 @@ justify-items: unset !important;
   }
   .metabnbImg {
     width: 100% !important;
+  }
+  .footerReverse {
+    flex-direction: column-reverse;
+    width: 95%;
+    margin: 0 0 0 20px;
+  }
+  .footerBottom {
+    margin: auto;
+  }
+  .footerBottom2 img {
+    margin: 40px 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerBottom3 {
+    padding: 0;
   }
 }
 

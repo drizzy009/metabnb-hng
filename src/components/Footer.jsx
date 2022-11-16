@@ -5,16 +5,16 @@ import { metabnblogo2 } from "../assets";
 
 const Footer = () => (
   <section className={`${styles.paddingY} flex-col bg-black`}>
-    <div className={`${styles.flexStart} md:flex-row  sm:flex-col mb-8 sm:w-[90%] w-[100%] flex-col-reverse`}>
-      <div className="sm:flex-[1] sm:flex sm:flex-col sm:justify-start sm:mr-10 m-[auto]">
+    <div className={`${styles.flexStart} ${style.footerReverse} md:flex-row  sm:flex-col mb-8 sm:w-[90%]  flex-col-reverse`}>
+      <div className={` ${style.footerBottom} sm:flex-[1] sm:flex sm:flex-col sm:justify-start sm:mr-10 m-[auto]`}>
       <div className={`${style.footerBorder} border-gray-600 border-t`}></div>
-        <div className="pt-12 mx-5 sm:mx-20 sm:pt-0 ">
+        <div className={`pt-12 mx-5 sm:mx-20 sm:pt-0 ${style.footerBottom2} `}>
         <img
           src={metabnblogo2}
           alt="metabnb"
           className=" sm:flex items-start sm:m-0 m-[auto] sm:w-[80%] w-[60%]"
         />
-        <div className="flex justify-center pt-8 pb-8 sm:justify-start sm:pb-12 sm:pt-20">
+        <div className={`flex justify-center pt-8 pb-8 sm:justify-start sm:pb-12 sm:pt-20 ${style.footerBottom3}`}>
         {socialMedia.map((social, index) => (
           <img
             key={social.id}
@@ -33,7 +33,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex-[1.5] sm:w-full w-[94px] flex flex-row justify-between flex-wrap md:mt-0 mt-10 sm:mx-0 mx-5">
+      <div className="flex-[1.5] sm:w-full w-[-2px] flex flex-row justify-between flex-wrap md:mt-0 mt-10 sm:mx-0 mx-5">
         {footerLinks.map((footerlink) => (
           <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 sm:min-w-[150px] min-w-[34%]`}>
             <h4 className="font-redrose font-bold text-[18px] leading-[22.48px] text-white">
