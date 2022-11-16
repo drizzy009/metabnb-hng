@@ -45,3 +45,9 @@ body {
     width: 93% !important;
   }
 }
+
+@media (max-width: 1345px) {
+  .ReactModal__Content.ReactModal__Content--after-open {
+    width: 70%;
+  }
+}

@@ -71,6 +71,9 @@
   .footerReverse {
     width: 100% !important;
   }
+  .heroFlex {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 1345px) {
